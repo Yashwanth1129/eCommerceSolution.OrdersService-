@@ -1,5 +1,4 @@
 **/.classpath
-**/.dockerignore
 **/.env
 **/.git
 **/.gitignore
@@ -13,8 +12,6 @@
 **/*.jfm
 **/bin
 **/charts
-**/docker-compose*
-**/compose*
 **/node_modules
 **/npm-debug.log
 **/obj
