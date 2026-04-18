@@ -8,8 +8,8 @@ USER app
 FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG configuration=Release
 WORKDIR /src
-COPY ["eCommerceSolution.OrdersService/eCommerceSolution.OrdersService.csproj", "eCommerceSolution.OrdersService/"]
-RUN dotnet restore "eCommerceSolution.OrdersService/eCommerceSolution.OrdersService.csproj"
+COPY ["eCommerceSolution.OrdersService.csproj", "./"]
+RUN dotnet restore "eCommerceSolution.OrdersService.csproj"
 COPY . .
 WORKDIR "/src/eCommerceSolution.OrdersService"
 RUN dotnet build "eCommerceSolution.OrdersService.csproj" -c $configuration -o /app/build
