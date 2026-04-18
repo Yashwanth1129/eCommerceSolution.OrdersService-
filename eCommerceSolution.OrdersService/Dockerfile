@@ -29,3 +29,5 @@ ENV UsersMicroservicePort=8080
 ENV ProductsMicroserviceName=localhost
 ENV ProductsMicroservicePort=8080
 ENTRYPOINT ["dotnet", "eCommerceSolution.OrdersService.dll"]
+
+
