@@ -1,0 +1,56 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP.NET Core service.
+
+services:
+  ecommercesolutionordersservice:
+    image: ordersmicroserviceapi
+    build:
+      context: .
+      dockerfile: eCommerceSolution.OrdersService/Dockerfile
+    environment:
+     - MONGODB_HOST=100.97.42.1
+     - MONGODB_PORT=27017
+     - MONGODB_DATABASE=OrdersDatabase
+     - UsersMicroserviceName=users-microservice
+     - UsersMicroservicePort=8080
+     - ProductsMicroserviceName=products-microservice
+     - ProductsMicroservicePort=8080
+    ports:
+     - "7001:8080"
+    networks:
+      - ecommerce-network
+
+  products-microservice:
+    image: products-microservice:latest
+    environment:
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_ENVIRONMENT=Development
+      - MYSQL_HOST="host.docker.internal"
+      - MYSQL_PORT="3306"
+      - MYSQL_DATABASE="ecommerceproductsdatabase"
+      - MYSQL_USER="root"
+      - MYSQL_PASSWORD="yash@123"
+    ports:
+      - "6000:8080"
+    networks:
+      - ecommerce-network
+
+  users-microservice:
+    image: users-microservice:latest
+    environment:
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_ENVIRONMENT=Development
+      - POSTGRES_HOST=100.97.42.1
+      - POSTGRES_PASSWORD=yash
+      - POSTGRES_DATABASE=eCommerceUsers
+      - POSTGRES_USER=postgres
+      - POSTGRES_PORT=5432
+    ports:
+      - "2000:8080"
+    networks:
+      - ecommerce-network
+
+networks:
+  ecommerce-network:
+    driver: bridge
+
+    
