@@ -32,9 +32,9 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build \
-            -f eCommerceSolution.OrdersService/eCommerceSolution.OrdersService/Dockerfile \
+            -f eCommerceSolution.OrdersService/Dockerfile \
             -t $IMAGE_NAME:${{ github.run_number }} \
-            eCommerceSolution.OrdersService/eCommerceSolution.OrdersService
+            eCommerceSolution.OrdersService
 
       - name: Login to DockerHub
         run: |
