@@ -1,0 +1,13 @@
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/bin/Debug/net10.0/DataAccessLayer.deps.json
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/bin/Debug/net10.0/DataAccessLayer.dll
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/bin/Debug/net10.0/DataAccessLayer.pdb
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/obj/Debug/net10.0/DataAccessLayer.csproj.AssemblyReference.cache
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/obj/Debug/net10.0/DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/obj/Debug/net10.0/DataAccessLayer.AssemblyInfoInputs.cache
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/obj/Debug/net10.0/DataAccessLayer.AssemblyInfo.cs
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/obj/Debug/net10.0/DataAccessLayer.csproj.CoreCompileInputs.cache
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/obj/Debug/net10.0/DataAccessLayer.sourcelink.json
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/obj/Debug/net10.0/DataAccessLayer.dll
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/obj/Debug/net10.0/refint/DataAccessLayer.dll
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/obj/Debug/net10.0/DataAccessLayer.pdb
+/Users/yash/microservices/eCommerceSolution.OrdersService/DataAccessLayer/obj/Debug/net10.0/ref/DataAccessLayer.dll
