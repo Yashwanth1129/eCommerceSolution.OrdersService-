@@ -34,11 +34,13 @@ jobs:
           docker build \
             -f eCommerceSolution.OrdersService/Dockerfile \
             -t $IMAGE_NAME:${{ github.run_number }} \
-            eCommerceSolution.OrdersService
+            .
 
       - name: Login to DockerHub
         run: |
-          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login \
+            -u "${{ secrets.DOCKER_USERNAME }}" \
+            --password-stdin
 
       - name: Push Docker Image
         run: |
